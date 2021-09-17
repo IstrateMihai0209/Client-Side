@@ -46,4 +46,20 @@ public class ClientHandle : MonoBehaviour
         GameManager.players[id].transform.position = position;
         GameManager.players[id].transform.rotation = rotation;
     }
+
+    public static void PlayerWeapon(Packet _packet)
+    {
+        int id = _packet.ReadInt();
+        int weaponId = _packet.ReadInt();
+
+        GameManager.players[id].ActivateWeapon(weaponId);
+    }
+
+    public static void PlayerWeaponRotation(Packet _packet)
+    {
+        int id = _packet.ReadInt();
+        Quaternion rotation = _packet.ReadQuaternion();
+
+        GameManager.players[id].WeaponRotation(rotation);
+    }
 }

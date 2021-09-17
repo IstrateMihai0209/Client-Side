@@ -7,10 +7,18 @@ ScriptsOnlyBuild:
     - GameManager
     - PlayerController
     - PlayerManager
+    - PlayerShoot
     - ThreadManager
     - UIManager
+    - WeaponSwap
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -25,7 +33,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.InputField
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/RPG_FPS_game_assets_industrial/Map_v1.unity:
+    Assets/External/RPG_FPS_game_assets_industrial/Map_v1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -63,34 +71,40 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1668}
     - Class: 114
-      Script: {instanceID: 1956}
+      Script: {instanceID: 1958}
     - Class: 114
-      Script: {instanceID: 2202}
+      Script: {instanceID: 2204}
     - Class: 114
-      Script: {instanceID: 2234}
+      Script: {instanceID: 2228}
     - Class: 114
-      Script: {instanceID: 2334}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2480}
+      Script: {instanceID: 2338}
     - Class: 114
-      Script: {instanceID: 2522}
+      Script: {instanceID: 2484}
     - Class: 114
-      Script: {instanceID: 2660}
+      Script: {instanceID: 2526}
     - Class: 114
-      Script: {instanceID: 2738}
+      Script: {instanceID: 2664}
     - Class: 114
-      Script: {instanceID: 2852}
+      Script: {instanceID: 2742}
     - Class: 114
-      Script: {instanceID: 2880}
+      Script: {instanceID: 2856}
     - Class: 114
-      Script: {instanceID: 3400}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 3866}
+      Script: {instanceID: 3404}
     - Class: 114
-      Script: {instanceID: 4104}
+      Script: {instanceID: 3688}
+    - Class: 114
+      Script: {instanceID: 3872}
+    - Class: 114
+      Script: {instanceID: 4110}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -195,6 +209,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BulletCollided
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -229,6 +249,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIManager
+  - hash:
+      serializedVersion: 2
+      Hash: a0c385503fbb794e921c9a29d6ace17a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WeaponSwap
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -543,6 +569,12 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: f0eb971399208423e3c7c7a8575535b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerShoot
+  - hash:
+      serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -555,7 +587,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: 15b6cad89e96d452e4cc652d3ef7c21b
+      Hash: 84707be9f5d28ee3ca3c418b08e69a68
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerManager
@@ -597,5 +629,5 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   platform: 19
   scenePathNames:
-  - Assets/RPG_FPS_game_assets_industrial/Map_v1.unity
+  - Assets/External/RPG_FPS_game_assets_industrial/Map_v1.unity
   playerPath: C:/Users/mihai/OneDrive/Desktop/Client/Client/Builds/Client.exe

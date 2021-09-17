@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Network\ThreadManager.cs" />
     <Compile Include="Assets\Scripts\Network\Packet.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Player\WeaponSwap.cs" />
     <Compile Include="Assets\Scripts\Network\ClientSend.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\CameraController.cs" />
@@ -67,7 +68,8 @@
     <Compile Include="Assets\Scripts\FPSCounter.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Player\WeaponSwap.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerShoot.cs" />
+    <Compile Include="Assets\Scripts\Player\BulletCollided.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

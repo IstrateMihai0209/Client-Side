@@ -21,29 +21,16 @@ public class WeaponSwap : MonoBehaviour
         //Swap between weapons
         if (smgObj != null && carbineObj != null)
         {
-            if (smg && !smgObj.activeSelf)
-            {
-                ActivateWeapon(smgObj);
-            }
-
             if (carbine && !carbineObj.activeSelf)
             {
-                ActivateWeapon(carbineObj);
+                ClientSend.CurrentWeapon(0);
+            }
+
+            if (smg && !smgObj.activeSelf)
+            {
+                ClientSend.CurrentWeapon(1);
             }
         }
-    }
-
-    void ActivateWeapon(GameObject _weapon)
-    {
-        //Deactivate other weapons
-        carbineObj.SetActive(false);
-        carbineObj.transform.localPosition = new Vector3(0.1f, -0.24f, 0.3f);
-
-        smgObj.SetActive(false);
-        smgObj.transform.localPosition = new Vector3(0.1f, -0.24f, 0.3f);
-
-        //Activate chosen weapon
-        _weapon.SetActive(true);
     }
 
     /*void ActivateSmg()

@@ -48,5 +48,25 @@ public class ClientSend : MonoBehaviour
         }
     }
 
+    public static void CurrentWeapon(int _weaponId)
+    {
+        using(Packet _packet = new Packet((int)ClientPackets.currentWeapon))
+        {
+            _packet.Write(_weaponId);
+
+            SendTCPData(_packet);
+        }
+    }
+
+    public static void CameraRotation(Quaternion _rotation)
+    {
+        using(Packet _packet = new Packet((int)ClientPackets.cameraRotation))
+        {
+            _packet.Write(_rotation);
+
+            SendUDPData(_packet);
+        }
+    }
+
     #endregion
 }
