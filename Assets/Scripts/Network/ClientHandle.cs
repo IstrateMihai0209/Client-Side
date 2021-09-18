@@ -26,6 +26,7 @@ public class ClientHandle : MonoBehaviour
         Vector3 _position = _packet.ReadVector3();
         Quaternion _rotation = _packet.ReadQuaternion();
 
+        WeaponSwap.newPlayer = true;
         GameManager.instance.SpawnPlayer(_id, _username, _position, _rotation);
     }
 
@@ -61,5 +62,12 @@ public class ClientHandle : MonoBehaviour
         Quaternion rotation = _packet.ReadQuaternion();
 
         GameManager.players[id].WeaponRotation(rotation);
+    }
+
+    public static void PlayerCameraRecoil(Packet _packet)
+    {
+        int id = _packet.ReadInt();
+        Vector3 recoilRotation = _packet.ReadVector3();
+        Debug.LogWarning("ACI AM RAMAS");
     }
 }

@@ -6,6 +6,8 @@ public class WeaponSwap : MonoBehaviour
     [SerializeField] private GameObject carbineObj;
     [SerializeField] private GameObject smgObj;
 
+    public static bool newPlayer = false;
+
     void Start()
     {
         carbineObj.SetActive(false);
@@ -29,6 +31,19 @@ public class WeaponSwap : MonoBehaviour
             if (smg && !smgObj.activeSelf)
             {
                 ClientSend.CurrentWeapon(1);
+            }
+
+            //Send info to new players
+            if(carbineObj.activeSelf && newPlayer)
+            {
+                ClientSend.CurrentWeapon(0);
+                newPlayer = false;
+            }
+
+            if(smgObj.activeSelf && newPlayer)
+            {
+                ClientSend.CurrentWeapon(1);
+                newPlayer = false;
             }
         }
     }

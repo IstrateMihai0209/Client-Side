@@ -279,6 +279,7 @@ public class Client : MonoBehaviour
             { (int)ServerPackets.playerPositionToAll, ClientHandle.PlayerPositionToAll },
             { (int)ServerPackets.playerWeapon, ClientHandle.PlayerWeapon },
             { (int)ServerPackets.playerWeaponRotation, ClientHandle.PlayerWeaponRotation },
+            { (int)ServerPackets.playerCameraRecoil, ClientHandle.PlayerCameraRecoil},
         };
         Debug.Log("Initialized packets.");
     }

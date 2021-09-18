@@ -68,5 +68,15 @@ public class ClientSend : MonoBehaviour
         }
     }
 
+    public static void CameraRecoil(Vector3 _recoil)
+    {
+        using(Packet _packet = new Packet((int)ClientPackets.cameraRecoil))
+        {
+            _packet.Write(_recoil);
+
+            SendUDPData(_packet);
+        }
+    }
+
     #endregion
 }

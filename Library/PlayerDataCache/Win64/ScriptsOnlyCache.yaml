@@ -1,15 +1,20 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AdjustCrosshair
+    - BulletCollided
     - CameraController
+    - CameraRecoil
     - Client
     - FPSCounter
     - GameManager
+    - GunManager
     - PlayerController
     - PlayerManager
     - PlayerShoot
     - ThreadManager
     - UIManager
+    - WFX_LightFlicker
     - WeaponSwap
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -52,6 +57,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -60,46 +67,58 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 96
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1478}
+      Script: {instanceID: 1500}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 1668}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 1958}
+      Script: {instanceID: 1696}
     - Class: 114
-      Script: {instanceID: 2204}
+      Script: {instanceID: 1924}
     - Class: 114
-      Script: {instanceID: 2228}
+      Script: {instanceID: 1990}
     - Class: 114
-      Script: {instanceID: 2238}
+      Script: {instanceID: 2134}
     - Class: 114
-      Script: {instanceID: 2338}
+      Script: {instanceID: 2244}
     - Class: 114
-      Script: {instanceID: 2484}
+      Script: {instanceID: 2268}
     - Class: 114
-      Script: {instanceID: 2526}
+      Script: {instanceID: 2278}
     - Class: 114
-      Script: {instanceID: 2664}
+      Script: {instanceID: 2380}
     - Class: 114
-      Script: {instanceID: 2742}
+      Script: {instanceID: 2476}
     - Class: 114
-      Script: {instanceID: 2856}
+      Script: {instanceID: 2528}
     - Class: 114
-      Script: {instanceID: 2884}
+      Script: {instanceID: 2570}
     - Class: 114
-      Script: {instanceID: 3404}
+      Script: {instanceID: 2710}
     - Class: 114
-      Script: {instanceID: 3688}
+      Script: {instanceID: 2788}
     - Class: 114
-      Script: {instanceID: 3872}
+      Script: {instanceID: 2902}
     - Class: 114
-      Script: {instanceID: 4110}
+      Script: {instanceID: 2930}
+    - Class: 114
+      Script: {instanceID: 3458}
+    - Class: 114
+      Script: {instanceID: 3742}
+    - Class: 114
+      Script: {instanceID: 3928}
+    - Class: 114
+      Script: {instanceID: 4084}
+    - Class: 114
+      Script: {instanceID: 4168}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -149,6 +168,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 20c9a74d659b6895cfdb5f4624ba8daa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_Demo_DeleteAfterDelay
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -165,6 +190,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: LayoutElement
+  - hash:
+      serializedVersion: 2
+      Hash: a2db29cc88878a669e51c286240e7c13
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraRecoil
   - hash:
       serializedVersion: 2
       Hash: 6bc76e17f0d5e93f3eea7f5a2fe227f3
@@ -197,10 +228,28 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 3f5031037e63abe5dcf87c278e01a4de
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_Demo_RotateCamera
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ThreadManager
+  - hash:
+      serializedVersion: 2
+      Hash: 4aac268d7e435f7a65add91aaba819a4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_Demo_RandomDir
+  - hash:
+      serializedVersion: 2
+      Hash: 660deb0ce569359218f0ba85b7ce0e3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_LightIntensityFade
   - hash:
       serializedVersion: 2
       Hash: 300fd99066f8c288e85f5e81ce65fe34
@@ -239,10 +288,22 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
+      Hash: 8b2d4e06e046ec1dc0a99d91bec0c17a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_Demo
+  - hash:
+      serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 79f1e4d923cfc803b34c05ae2cb73dac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_LightFlicker
   - hash:
       serializedVersion: 2
       Hash: 05c26a69c1fde3f08133e03cc006af91
@@ -267,6 +328,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 263025083d0a7e8d3b9c0c9ab88a743d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_SpawnSystem
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -299,6 +366,12 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 515c068e459dadf39824e934c7a4e7e7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AdjustCrosshair
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
@@ -327,6 +400,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 1d0beb1a2d4edee4c06b6835632e83a3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_AutoStopLoopedEffect
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -413,6 +492,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: f1b1d314ca3b7b03e29e12762db58162
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_BulletHoleDecal
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -435,6 +520,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 4aac268d7e435f7a65add91aaba819a4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_Demo_RandomDir
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -485,6 +576,12 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: 671420ad2c33f1ddaf6d076461adf15a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_Demo_Translate
+  - hash:
+      serializedVersion: 2
       Hash: a81d4c2c1cf3ad164d277d927a193679
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -507,6 +604,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ClientHandle
+  - hash:
+      serializedVersion: 2
+      Hash: dd7780efe480b95c7be3094f9d1d4270
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_Demo_Wall
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -587,6 +690,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
+      Hash: 5d27c6e85ec89cfab8577e9e26695e88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_AutoDestructShuriken
+  - hash:
+      serializedVersion: 2
       Hash: 84707be9f5d28ee3ca3c418b08e69a68
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -599,6 +708,12 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 6f9a16406ccb2e714b75f56ce65da92d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GunManager
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -609,6 +724,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 7d37d09af363b70d55d9408e5fb34050
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_Demo_New
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f

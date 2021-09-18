@@ -9,7 +9,7 @@ public class BulletCollided : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag != "LocalPlayer" && col.gameObject.tag != "Bullet")
+        if (col.gameObject.tag != "Bullet")
         {
             Destroy(gameObject);
         }
