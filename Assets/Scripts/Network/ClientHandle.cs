@@ -68,6 +68,7 @@ public class ClientHandle : MonoBehaviour
     {
         int id = _packet.ReadInt();
         Vector3 recoilRotation = _packet.ReadVector3();
-        Debug.LogWarning("ACI AM RAMAS");
+
+        GameManager.players[id].CamRecoil(recoilRotation);
     }
 }

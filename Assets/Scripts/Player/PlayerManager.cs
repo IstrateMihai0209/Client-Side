@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private GameObject carbineObj;
     [SerializeField] private GameObject smgObj;
     [SerializeField] private GameObject weaponsObj;
+    [SerializeField] private GameObject camRecoil;
 
     public void Initialize(int _id, string _username)
     {
@@ -47,5 +48,10 @@ public class PlayerManager : MonoBehaviour
     public void WeaponRotation(Quaternion _rotation)
     {
         weaponsObj.transform.localRotation = _rotation;
+    }
+
+    public void CamRecoil(Vector3 _recoilRotation)
+    {
+        camRecoil.transform.localRotation = Quaternion.Euler(_recoilRotation);
     }
 }

@@ -16,6 +16,7 @@ ScriptsOnlyBuild:
     - UIManager
     - WFX_LightFlicker
     - WeaponSwap
+    - WeaponSway
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -119,6 +120,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4084}
     - Class: 114
       Script: {instanceID: 4168}
+    - Class: 114
+      Script: {instanceID: 31588}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -696,7 +699,7 @@ ScriptsOnlyBuild:
     className: CFX_AutoDestructShuriken
   - hash:
       serializedVersion: 2
-      Hash: 84707be9f5d28ee3ca3c418b08e69a68
+      Hash: 941dc881af7bcf608c0cdc946b09e95d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerManager
@@ -748,6 +751,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: b8a4475e3612df2c2fb6ebe23bf4f59d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WeaponSway
   platform: 19
   scenePathNames:
   - Assets/External/RPG_FPS_game_assets_industrial/Map_v1.unity

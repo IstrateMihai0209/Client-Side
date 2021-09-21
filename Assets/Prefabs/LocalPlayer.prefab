@@ -15341,6 +15341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 527635998521249965}
+  - component: {fileID: 410761556785947389}
   - component: {fileID: 7808610734678765545}
   m_Layer: 7
   m_Name: 2 - SMG9
@@ -15370,6 +15371,25 @@ Transform:
   m_Father: {fileID: 9197996334215016229}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &410761556785947389
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871827550486202903}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 154ca579c57d3a14cbc759b3929da3b7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &7808610734678765545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33137,6 +33157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9197996334215016229}
   - component: {fileID: 7566539646703192237}
+  - component: {fileID: 867507536541106458}
   m_Layer: 7
   m_Name: Weapons
   m_TagString: Untagged
@@ -33174,6 +33195,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carbineObj: {fileID: 134617965574069438}
   smgObj: {fileID: 871827550486202903}
+--- !u!114 &867507536541106458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5791592017601489396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a2635e9956fede45bef7ed0746e501a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.35
+  smoothness: 20
 --- !u!1 &5838370106702788819
 GameObject:
   m_ObjectHideFlags: 0
@@ -35672,6 +35707,7 @@ MonoBehaviour:
   carbineObj: {fileID: 134617965574069438}
   smgObj: {fileID: 871827550486202903}
   weaponsObj: {fileID: 5791592017601489396}
+  camRecoil: {fileID: 0}
 --- !u!114 &2271158237642354653
 MonoBehaviour:
   m_ObjectHideFlags: 0

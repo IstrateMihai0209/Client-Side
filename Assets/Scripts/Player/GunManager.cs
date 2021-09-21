@@ -75,22 +75,22 @@ public class GunManager : MonoBehaviour
         adjustCrosshair.offset = crosshairOffset;
     }
 
-    void Update()
+    /*void Update()
     {
         //Handling Animations
-        /*bool aim = Input.GetButton("Fire2");
+        bool aim = Input.GetButton("Fire2");
         playerSpeed = playerComponent.speed;
 
         //Aiming Animation
         if (aim && !playerComponent.sprinting)
         {
             animator.SetBool(aimHash, true);
-            //camRecoil.aiming = true;
+            camRecoil.aiming = true;
         }
         else
         {
             animator.SetBool(aimHash, false);
-            //camRecoil.aiming = false;
+            camRecoil.aiming = false;
         }
 
         //Holster Animation
@@ -114,15 +114,15 @@ public class GunManager : MonoBehaviour
         }
 
         //Shooting Animation
-        /*if (playerShootComponent.shoot)
+        if (playerShootComponent.shoot)
             animator.SetBool(shootHash, true);
         else
-            animator.SetBool(shootHash, false);*/
+            animator.SetBool(shootHash, false);
 
         //Multiply the recoil even further while moving
         if (playerComponent.moving)
             camRecoil.recoilMultiplier = 85f;
         else
             camRecoil.recoilMultiplier = 50f;
-    }
+    }*/
 }

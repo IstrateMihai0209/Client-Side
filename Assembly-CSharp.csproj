@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\External\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
+    <Compile Include="Assets\Scripts\Player\CameraRecoil.cs" />
     <Compile Include="Assets\Scripts\Network\Client.cs" />
     <Compile Include="Assets\External\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\Scripts\Network\ThreadManager.cs" />
@@ -86,7 +87,8 @@
     <Compile Include="Assets\Scripts\Player\GunManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\External\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
-    <Compile Include="Assets\Scripts\Player\CameraRecoil.cs" />
+    <Compile Include="Assets\Scripts\Player\WeaponSway.cs" />
+    <Compile Include="Assets\Scripts\Player\WeaponRecoil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\External\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />

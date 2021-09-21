@@ -19,11 +19,13 @@ public class CameraRecoil : MonoBehaviour
 
     [Header("Others")]
     private PlayerShoot playerShoot;
+    private GameObject lookRoot;
     public bool aiming;
 
     void Start()
     {
         playerShoot = GameObject.Find("LocalPlayer(Clone)").GetComponent<PlayerShoot>();
+        lookRoot = GameObject.Find("Look Root");
     }
 
     void FixedUpdate()
@@ -37,7 +39,9 @@ public class CameraRecoil : MonoBehaviour
             Fire(); 
         }
 
-        ClientSend.CameraRecoil(rotation);
+        if (lookRoot.transform.localRotation != Quaternion.Euler(Vector3.zero))
+            ClientSend.CameraRecoil(rotation);
+
     }
 
     private void Fire()
